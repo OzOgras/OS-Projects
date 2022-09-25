@@ -1,0 +1,4 @@
+I write a program called runscan that takes two arguments, an input file that contains the disk image and an output directory where your output files will be stored. This program, 
+
+reconstructs all jpg files (both undeleted and deleted ones) from a given disk image. To do this, I scan all inodes that represent regular files and check if the first data block of the inode contains the jpg magic numbers: FF D8 FF E0 or FF D8 FF E1 or FF D8 FF E8.
+Once an inode that represents a jpg file is identified, the content of that file is copied to an output file (stored in 'output/' directory), using the inode number as the file name. 
