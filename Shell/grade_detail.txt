@@ -1,0 +1,10 @@
+CS Login: bugrahan
+Partners: 
+passed tests: 26 / 27 (4.0 points each)
+testcase points: 104.00 / 108.00
+
+valgrind leaks possible: yes
+valgrind memory errors: no
+valgrind points: 6.00 / 12.00
+
+total points: 110 / 120
