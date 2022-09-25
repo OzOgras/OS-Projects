@@ -1,0 +1,166 @@
+==808748== Memcheck, a memory error detector
+==808748== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==808748== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==808748== Command: ./wordcount_cp_m10r50 /p/course/cs537-yuvraj/TA-PM/P4/tests/inputs/file10m.in
+==808748== 
+==808748== Thread 2:
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x4874FD3: pthread_mutex_lock (pthread_mutex_lock.c:71)
+==808748==    by 0x109A8B: MR_Emit (mapreduce.c:109)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x4874FDC: pthread_mutex_lock (pthread_mutex_lock.c:75)
+==808748==    by 0x109A8B: MR_Emit (mapreduce.c:109)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x4874FF3: pthread_mutex_lock (pthread_mutex_lock.c:80)
+==808748==    by 0x109A8B: MR_Emit (mapreduce.c:109)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x4874FFE: pthread_mutex_lock (pthread_mutex_lock.c:81)
+==808748==    by 0x109A8B: MR_Emit (mapreduce.c:109)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x48767C2: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:42)
+==808748==    by 0x48767C2: pthread_mutex_unlock (pthread_mutex_unlock.c:357)
+==808748==    by 0x109AD7: MR_Emit (mapreduce.c:116)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x48767C9: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:47)
+==808748==    by 0x48767C9: pthread_mutex_unlock (pthread_mutex_unlock.c:357)
+==808748==    by 0x109AD7: MR_Emit (mapreduce.c:116)
+==808748==    by 0x109532: Map (wordcount_cp.c:34)
+==808748==    by 0x109800: map_wrapper (mapreduce.c:136)
+==808748==    by 0x4872608: start_thread (pthread_create.c:477)
+==808748==    by 0x49AC132: clone (clone.S:95)
+==808748== 
+==808748== Thread 1:
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x487487A: pthread_mutex_destroy (pthread_mutex_destroy.c:32)
+==808748==    by 0x10A037: MR_Run (mapreduce.c:276)
+==808748==    by 0x10970D: main (wordcount_cp.c:74)
+==808748== 
+==808748== Conditional jump or move depends on uninitialised value(s)
+==808748==    at 0x4874886: pthread_mutex_destroy (pthread_mutex_destroy.c:34)
+==808748==    by 0x10A037: MR_Run (mapreduce.c:276)
+==808748==    by 0x10970D: main (wordcount_cp.c:74)
+==808748== 
+==808748== 
+==808748== HEAP SUMMARY:
+==808748==     in use at exit: 65,579,086 bytes in 5,622,565 blocks
+==808748==   total heap usage: 5,623,665 allocs, 1,100 frees, 103,026,326 bytes allocated
+==808748== 
+==808748== LEAK SUMMARY:
+==808748==    definitely lost: 136 bytes in 2 blocks
+==808748==    indirectly lost: 0 bytes in 0 blocks
+==808748==      possibly lost: 0 bytes in 0 blocks
+==808748==    still reachable: 65,578,950 bytes in 5,622,563 blocks
+==808748==         suppressed: 0 bytes in 0 blocks
+==808748== Rerun with --leak-check=full to see details of leaked memory
+==808748== 
+==808748== Use --track-origins=yes to see where uninitialised values come from
+==808748== For lists of detected and suppressed errors, rerun with: -s
+==808748== ERROR SUMMARY: 7496782 errors from 8 contexts (suppressed: 0 from 0)
+==808966== Memcheck, a memory error detector
+==808966== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==808966== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==808966== Command: ./wordcount_multi_m1r1 /p/course/cs537-yuvraj/TA-PM/P4/tests/inputs/file1m.in
+==808966== 
+==808966== Thread 2:
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x4874FD3: pthread_mutex_lock (pthread_mutex_lock.c:71)
+==808966==    by 0x109A86: MR_Emit (mapreduce.c:109)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x4874FDC: pthread_mutex_lock (pthread_mutex_lock.c:75)
+==808966==    by 0x109A86: MR_Emit (mapreduce.c:109)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x4874FF3: pthread_mutex_lock (pthread_mutex_lock.c:80)
+==808966==    by 0x109A86: MR_Emit (mapreduce.c:109)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x4874FFE: pthread_mutex_lock (pthread_mutex_lock.c:81)
+==808966==    by 0x109A86: MR_Emit (mapreduce.c:109)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x48767C2: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:42)
+==808966==    by 0x48767C2: pthread_mutex_unlock (pthread_mutex_unlock.c:357)
+==808966==    by 0x109AD2: MR_Emit (mapreduce.c:116)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x48767C9: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:47)
+==808966==    by 0x48767C9: pthread_mutex_unlock (pthread_mutex_unlock.c:357)
+==808966==    by 0x109AD2: MR_Emit (mapreduce.c:116)
+==808966==    by 0x10951B: Map (wordcount_multi.c:38)
+==808966==    by 0x1097FB: map_wrapper (mapreduce.c:136)
+==808966==    by 0x4872608: start_thread (pthread_create.c:477)
+==808966==    by 0x49AC132: clone (clone.S:95)
+==808966== 
+==808966== Thread 1:
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x487487A: pthread_mutex_destroy (pthread_mutex_destroy.c:32)
+==808966==    by 0x10A032: MR_Run (mapreduce.c:276)
+==808966==    by 0x1096FC: main (wordcount_multi.c:80)
+==808966== 
+==808966== Conditional jump or move depends on uninitialised value(s)
+==808966==    at 0x4874886: pthread_mutex_destroy (pthread_mutex_destroy.c:34)
+==808966==    by 0x10A032: MR_Run (mapreduce.c:276)
+==808966==    by 0x1096FC: main (wordcount_multi.c:80)
+==808966== 
+==808966== 
+==808966== HEAP SUMMARY:
+==808966==     in use at exit: 14,037,086 bytes in 1,124,514 blocks
+==808966==   total heap usage: 1,125,364 allocs, 850 frees, 23,950,414 bytes allocated
+==808966== 
+==808966== LEAK SUMMARY:
+==808966==    definitely lost: 344 bytes in 7 blocks
+==808966==    indirectly lost: 7,018,335 bytes in 562,252 blocks
+==808966==      possibly lost: 0 bytes in 0 blocks
+==808966==    still reachable: 7,018,407 bytes in 562,255 blocks
+==808966==         suppressed: 0 bytes in 0 blocks
+==808966== Rerun with --leak-check=full to see details of leaked memory
+==808966== 
+==808966== Use --track-origins=yes to see where uninitialised values come from
+==808966== For lists of detected and suppressed errors, rerun with: -s
+==808966== ERROR SUMMARY: 1499344 errors from 8 contexts (suppressed: 0 from 0)
