@@ -1,0 +1,67 @@
+
+*** Start testing the my-look utility...
+
+*** Linting output for my-look
+Done processing my-look.c
+
+*** Compiler output for my-look
+
+*** Valgrind output for my-look
+==457877== Memcheck, a memory error detector
+==457877== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==457877== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==457877== Command: ./my-look -f my-look.c #
+==457877== 
+==457877== 
+==457877== HEAP SUMMARY:
+==457877==     in use at exit: 0 bytes in 0 blocks
+==457877==   total heap usage: 2 allocs, 2 frees, 4,568 bytes allocated
+==457877== 
+==457877== All heap blocks were freed -- no leaks are possible
+==457877== 
+==457877== For lists of detected and suppressed errors, rerun with: -s
+==457877== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+*** Testing output for my-look
+test 1: [0;32mpassed[0m
+test 2: [0;32mpassed[0m
+test 3: [0;32mpassed[0m
+test 4: [0;32mpassed[0m
+test 5: [0;32mpassed[0m
+test 6: [0;32mpassed[0m
+test 7: [0;32mpassed[0m
+test 8: [0;32mpassed[0m
+test 9: [0;32mpassed[0m
+test 10: [0;32mpassed[0m
+
+*** Start testing the wordle utility...
+
+*** Linting output for wordle
+Done processing wordle.c
+
+*** Compiler output for wordle
+
+*** Valgrind output for wordle
+==458078== Memcheck, a memory error detector
+==458078== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==458078== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==458078== Command: ./wordle -f wordle.c
+==458078== 
+==458078== 
+==458078== HEAP SUMMARY:
+==458078==     in use at exit: 0 bytes in 0 blocks
+==458078==   total heap usage: 2 allocs, 2 frees, 4,568 bytes allocated
+==458078== 
+==458078== All heap blocks were freed -- no leaks are possible
+==458078== 
+==458078== For lists of detected and suppressed errors, rerun with: -s
+==458078== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+*** Testing output for wordle
+test 1: [0;32mpassed[0m
+test 2: [0;32mpassed[0m
+test 3: [0;32mpassed[0m
+test 4: [0;32mpassed[0m
+test 5: [0;32mpassed[0m
+test 6: [0;32mpassed[0m
+test 7: [0;32mpassed[0m
